@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 160" fill="none">
+  <!-- Background transparent -->
+  
+  <!-- Molecule structure (left of PL) -->
+  <g stroke="#1E3A8A" stroke-width="1.2" opacity="0.85">
+    <!-- Hexagon shape -->
+    <polygon points="58,38 72,30 86,38 86,54 72,62 58,54" fill="none" stroke="#1E3A8A" stroke-width="1"/>
+    <!-- Nodes -->
+    <circle cx="58" cy="38" r="3.5" fill="#1E3A8A"/>
+    <circle cx="72" cy="30" r="3.5" fill="#1E3A8A"/>
+    <circle cx="86" cy="38" r="3.5" fill="#1E3A8A"/>
+    <circle cx="86" cy="54" r="3.5" fill="#1E3A8A"/>
+    <circle cx="72" cy="62" r="3.5" fill="#1E3A8A"/>
+    <circle cx="58" cy="54" r="3.5" fill="#1E3A8A"/>
+    <!-- Extended bonds -->
+    <line x1="58" y1="54" x2="44" y2="68" stroke="#1E3A8A" stroke-width="1"/>
+    <circle cx="44" cy="68" r="3.5" fill="#1E3A8A"/>
+    <line x1="44" y1="68" x2="44" y2="84" stroke="#1E3A8A" stroke-width="1"/>
+    <circle cx="44" cy="84" r="2.5" fill="#94A3B8"/>
+    <line x1="72" y1="30" x2="72" y2="14" stroke="#1E3A8A" stroke-width="1"/>
+    <circle cx="72" cy="14" r="2.5" fill="#94A3B8"/>
+    <line x1="86" y1="38" x2="100" y2="30" stroke="#1E3A8A" stroke-width="1"/>
+    <circle cx="100" cy="30" r="2.5" fill="#94A3B8"/>
+  </g>
+
+  <!-- PL Monogram -->
+  <!-- P letter -->
+  <text x="92" y="100" font-family="Georgia, 'Times New Roman', serif" font-size="78" font-weight="700" 
+    fill="url(#navyGrad)" letter-spacing="-4">P</text>
+  <!-- L letter -->
+  <text x="138" y="100" font-family="Georgia, 'Times New Roman', serif" font-size="78" font-weight="700" 
+    fill="url(#navyGrad)" letter-spacing="-4">L</text>
+
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="navyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E3A8A"/>
+      <stop offset="50%" style="stop-color:#0B1D3A"/>
+      <stop offset="100%" style="stop-color:#1E3A8A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- PEPTILAB wordmark -->
+  <!-- PEPTI in navy/gray -->
+  <text x="92" y="125" font-family="'Arial', sans-serif" font-size="13" font-weight="300" 
+    fill="#0B1D3A" letter-spacing="6">PEPTI</text>
+  <!-- LAB in blue accent -->
+  <text x="161" y="125" font-family="'Arial', sans-serif" font-size="13" font-weight="700" 
+    fill="#1E3A8A" letter-spacing="6">LAB</text>
+  
+  <!-- Divider line -->
+  <line x1="109" y1="130" x2="190" y2="130" stroke="#1E3A8A" stroke-width="0.8" opacity="0.5"/>
+  
+  <!-- Tagline -->
+  <text x="80" y="145" font-family="'Arial', sans-serif" font-size="6" font-weight="300" 
+    fill="#94A3B8" letter-spacing="3.5">SCIENCE. QUALITY. RESULTS.</text>
+</svg>

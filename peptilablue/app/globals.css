@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@200;300;400;500;600&family=Space+Mono:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* PRIMARY — Deep Navy palette from Brand Kit */
+  --navy:       #0B1D3A;
+  --navy-mid:   #0F2444;
+  --navy-light: #152D56;
+  --blue:       #1E3A8A;
+  --blue-mid:   #1a3278;
+  --blue-light: #2B4FAA;
+  --blue-pale:  #3B62C2;
+
+  /* NEUTRALS */
+  --white:      #F5F7FA;
+  --off-white:  #EEF1F6;
+  --silver:     #C0C6CC;
+  --steel:      #94A3B8;
+  --steel-dim:  #64748B;
+  --muted:      #475569;
+
+  /* ACCENT */
+  --cyan-soft:  #38BDF8;
+  --cyan-dim:   rgba(56,189,248,0.12);
+
+  /* BACKGROUNDS */
+  --bg-primary:   #050D1A;   /* deepest navy-black */
+  --bg-secondary: #071022;
+  --bg-card:      #0B1D3A;
+  --bg-card2:     #0F2444;
+  --bg-card3:     #152D56;
+
+  /* TEXT */
+  --text:       #F5F7FA;
+  --text-dim:   #94A3B8;
+  --text-muted: #475569;
+
+  /* Legacy aliases (keeps components working) */
+  --gold:       #1E3A8A;
+  --gold-light: #2B4FAA;
+  --gold-pale:  #3B62C2;
+  --black:      #050D1A;
+  --dark:       #071022;
+  --dark2:      #0B1D3A;
+  --dark3:      #0F2444;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg-primary);
+  color: var(--text);
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 2px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb { background: var(--blue); }
+
+::selection {
+  background: rgba(30, 58, 138, 0.3);
+  color: var(--cyan-soft);
+}
+
+/* Font helpers */
+.font-playfair  { font-family: 'Playfair Display', serif; }
+.font-montserrat { font-family: 'Montserrat', sans-serif; }
+.font-space-mono { font-family: 'Space Mono', monospace; }
+
+/* Override Tailwind font aliases used in components */
+.font-cormorant { font-family: 'Playfair Display', serif; }
+.font-josefin   { font-family: 'Montserrat', sans-serif; }
+
+/* Utility overrides */
+.text-gold       { color: var(--blue-light); }
+.text-gold-light { color: var(--blue-pale); }
+.text-dim        { color: var(--text-dim); }
+.bg-dark         { background: var(--bg-secondary); }
+.bg-dark2        { background: var(--bg-card); }
+.bg-black-main   { background: var(--bg-primary); }
+
+/* Medical-grade subtle grid overlay on hero */
+.medical-grid {
+  background-image: 
+    linear-gradient(rgba(30,58,138,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(30,58,138,0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Glow effects */
+.glow-blue {
+  box-shadow: 0 0 20px rgba(30,58,138,0.3), 0 0 60px rgba(30,58,138,0.1);
+}
+.glow-blue-text {
+  text-shadow: 0 0 20px rgba(56,189,248,0.3);
+}
